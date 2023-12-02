@@ -4,15 +4,15 @@ import time
 import csv
 
 
-path = '/Users/pnalzate/Desktop/BBH/Projects'  # your path goes here
+path = ''  # your path goes here
 service = Service(executable_path=path)
-website =  "https://blackrosefed.org/contact-us-contactenos/"
+website =  ""
 driver = webdriver.Chrome(service=service)
 
 driver.get(website)
 time.sleep(3)
 
-with open('info.csv') as csv_file:
+with open('') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     header = next(csv_reader)
     count = 1

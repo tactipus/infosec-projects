@@ -26,7 +26,7 @@ def faker_categorical(num=1000, seed=None):
 
 info = faker_categorical()
 
-myFile = open('list_of_emails.csv', 'w')
+myFile = open('XXX.csv', 'w')
 writer = csv.DictWriter(myFile, fieldnames=['Name', 'Email', 'Message'])
 writer.writeheader()
 writer.writerows(info)
